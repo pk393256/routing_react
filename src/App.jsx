@@ -4,6 +4,7 @@ import AllProducts from './document/AllProducts';
 import ProductDetail from './document/ProductDetail';
 import Home from './document/Home';
 import Product from './document/Product';
+import NotFound from './document/NotFound';
 import {
   ChakraProvider,
   
@@ -22,6 +23,7 @@ function App() {
         <Route path='/AllProducts' element={<AllProducts />}></Route>
         {/* <Route path='/ProductDetails' element={<ProductDetail />}></Route> */}
         <Route path='/product/:id' element={<Product />}></Route>
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
     </ChakraProvider>
   );
