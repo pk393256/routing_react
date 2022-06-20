@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import AllProducts from './document/AllProducts';
 import ProductDetail from './document/ProductDetail';
 import Home from './document/Home';
+import Product from './document/Product';
 import {
   ChakraProvider,
   
@@ -19,7 +20,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/AllProducts' element={<AllProducts />}></Route>
-        <Route path='/ProductDetail' element={<ProductDetail />}></Route>
+        {/* <Route path='/ProductDetails' element={<ProductDetail />}></Route> */}
+        <Route path='/product/:id' element={<Product />}></Route>
       </Routes>
     </ChakraProvider>
   );

@@ -15,8 +15,8 @@ function Navbar(){
     return(
         <NavbarWrapper>
             <Link to='/'>Home</Link>
-            <Link to='/allproduct'>All Products</Link>
-            <Link to='/productdetails'>Product Detail</Link>
+            <Link to='/AllProducts'>All Products</Link>
+            <Link to='/ProductDetails'>Product Detail</Link>
         </NavbarWrapper>
     )
 }
